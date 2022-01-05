@@ -1,0 +1,13 @@
+.container {
+  width: auto;
+  height: auto;
+  background-color: teal;
+}
+
+.reg-img {
+  width: 50rem;
+}
+
+.circle {
+  background-color: tomato;
+}
