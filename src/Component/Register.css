@@ -1,13 +1,16 @@
 .container {
   width: auto;
   height: auto;
-  background-color: teal;
 }
 
 .reg-img {
-  width: 50rem;
+  width: 10rem;
 }
 
-.circle {
+.reg-background {
   background-color: tomato;
+  content: '';
+  width: 230px;
+  height: 180px;
+  z-index: 1;
 }
