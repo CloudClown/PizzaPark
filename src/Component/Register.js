@@ -2,52 +2,70 @@ import React from 'react';
 import './Register.css';
 import regImg from '../img/reg.png';
 // mui
-import Input from '@mui/material/Input';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import SigninIcon from '@mui/icons-material/Login';
+import {TextField} from "@mui/material";
+import Typography from '@mui/material/Typography';
+import { makeStyles } from '@mui/styles';
+
+const useStyles = makeStyles({
+    rightSec: {
+        "width": '690px',
+        "height": '670px',
+        "display": "flex",
+        "flex-direction": "column",
+        "justify-content": "center",
+        "align-items": "center",
+    },
+    regImg: {
+        width: '460px',
+        height: '380px',
+    }
+})
 
 const Register = () => {
+    const classes = useStyles();
   return (
     <>
-      <div className="container">
-        <div className="reg-background"></div>
-        <Grid
-          container
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
-        >
-          <Grid item md={6}>
-            <div className="form">
-              <Grid
+     <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
+        <Grid item md={6}>
+            <Grid
                 container
                 direction="column"
                 justifyContent="center"
                 alignItems="center"
-              >
-                <form noValidate autoComplete="off">
-                  <Grid item md={6}>
-                    <Input placeholder="Email" required />
+            >
+
+                <form>
+                  <Grid item>
+                    <TextField margin="dense"  label="First Name" variant="outlined" />
                   </Grid>
-                  <Grid item md={6}>
-                    <Input placeholder="Password" required />
+                  <Grid item>
+                    <TextField margin="dense" label="Last Name" variant="outlined" />
+                  </Grid>
+                  <Grid item>
+                    <TextField margin="dense" label="Email" variant="outlined" />
+                  </Grid>
+                  <Grid item>
+                    <TextField margin="dense" label="Password" variant="outlined" />
+                  </Grid>
+                  <Grid item>
+                    <TextField margin="dense" label="Confirm" variant="outlined" />
                   </Grid>
                 </form>
-              </Grid>
-            </div>
-          </Grid>
 
-          <Grid item md={6}>
-            <Button variant="contained" startIcon={<SigninIcon />}>
-              Send
-            </Button>
-            <div className="reg-img">
-              <img src={regImg} alt="register" className="register-img" />
-            </div>
-          </Grid>
+            </Grid>
         </Grid>
-      </div>
+       <Grid item md={6}>
+           <div className={classes.rightSec}>
+         <Typography variant="h3">One of Us ?</Typography>
+         <Typography variant="subtitle1">We Provide Medical Services Like Video Consultation, Online COVID_19 Care & Blood Management System. You Can Contact Us Through WhatsApp or Our Email Provided On About Section.</Typography>
+         <Button variant='outlined'>Button for icon and svg</Button>
+           <img className={classes.regImg} src={regImg} />
+           </div>
+       </Grid>
+     </Grid>
     </>
   );
 };
