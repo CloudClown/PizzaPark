@@ -1,7 +1,19 @@
 *{
   padding: 0;
   margin: 0;
-  display: border-box;
+  overflow: hidden;
+}
+
+.cont {
+position: absolute;
+content: "";
+z-index: -1;
+height: 2000px;
+width: 2000px;
+background-color: rgb(31,206,253);
+border-bottom-left-radius: 50%;
+  left: 55rem;
+  bottom: 6rem;
 }
 .container {
   width: auto;
