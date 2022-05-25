@@ -1,6 +1,10 @@
 # PizzaPark
 
-kunta leka thakbo myb
+Landing page
+Sing-up
+log-in
+create pizza
+pizza collection
 
 ## Kita kita kora jay
 
