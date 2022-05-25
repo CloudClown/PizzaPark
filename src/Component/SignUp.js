@@ -2,6 +2,8 @@ import React from 'react';
 import {Box, Button, FormControlLabel, Grid, Link, Paper, TextField, Typography} from "@mui/material";
 import { styled } from '@mui/system';
 import { makeStyles } from '@mui/styles';
+import Fade from 'react-reveal/Fade';
+
 
 //Image
 import noise from "./img/Rectangle.png"
@@ -45,12 +47,16 @@ const SignUp = () => {
                           alignItems="center">
                         <Grid item>
                             <Box style={{color: "#fff", fontSize: "410", position: "absolute",
-                                top: "80%", right:"60rem"}}>
+                                top: "80%", right:"60rem", width:"100%"}}>
+                                <Fade left>
                                 <Typography sx={{fontSize: "96px", fontWeight: "600", textAlign: "left"}} variant="h1"
                                             align="center">Make Pizza</Typography>
+                                </Fade>
+                                <Fade right>
                                 <Typography sx={{fontSize: "96px", fontWeight: "600", textAlign: "left"}} variant="h1"
                                             align="center">N<img src={O} alt="o" className={classes.shapeO}/>t
                                     War</Typography>
+                                </Fade>
                             </Box>
                         </Grid>
                         <Grid item>
