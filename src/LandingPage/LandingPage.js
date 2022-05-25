@@ -28,7 +28,7 @@ const LandingPage = () => {
                     <Grid container direction="row" justifyContent="space-around" alignItems="center">
                         <Grid item>
                             {/*<img src={"/public/"} alt="Logo" height={400} style={{width: '80%', paddingRight: '1rem'}}/>*/}
-                            <Typography variant={"h5"}>Pizz<span style={{color: "red"}}>Park</span></Typography>
+                            <Typography variant={"h5"}>Pizza<span style={{color: "red"}}>Park</span></Typography>
                         </Grid>
                         <Grid item>
                             <NavBtnStyle >One</NavBtnStyle>
@@ -41,7 +41,7 @@ const LandingPage = () => {
                             <Button variant={"outlined"} sx={{ marginRight: "1rem" }}>Sign-Up</Button>
                             </Link>
                             <Link to="/login">
-                            <Button variant={"outlined"}>Sign-In</Button>
+                            <Button variant={"outlined"}>Log-In</Button>
                             </Link>
                         </Grid>
                     </Grid>
