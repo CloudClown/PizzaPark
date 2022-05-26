@@ -26,6 +26,7 @@ const ColorButton = styled(Button)(({ theme }) => ({
     width: '197px',
     height: '66px',
     borderRadius: "35px",
+    marginTop: '2rem',
     '&:hover': {
         backgroundColor: "##F85433",
         color: "#fff"
@@ -40,20 +41,19 @@ const SignUp = () => {
         <>
             <Box sx={{backgroundColor: '#F85433', height: "100vh", zIndex: '1', position: "relative"}}>
                 <img src={noise} alt="noise"
-                     style={{position: "absolute", zIndex: '2', height: "100vh", width: "100vw"}}/>
+                     style={{position: "absolute", zIndex: '2', height: "100vh", width: "100%"}}/>
                 <Box style={{zIndex: "3", position: "absolute", right: '23%', top: "30%"}}>
                     <Grid container direction="row"
                           justifyContent="center"
                           alignItems="center">
                         <Grid item>
-                            <Box style={{color: "#fff", fontSize: "410", position: "absolute",
-                                top: "80%", right:"60rem", width:"100%"}}>
+                            <Box style={{color: "#fff", fontSize: "410", position: "relative",
+                                top: "13rem", right:"60%", width:"100%"}}>
                                 <Fade left>
-                                <Typography sx={{fontSize: "96px", fontWeight: "600", textAlign: "left"}} variant="h1"
-                                            align="center">Make Pizza</Typography>
+                                <Typography sx={{fontSize: "121px", fontWeight: "600"}} variant="h1">Make Pizza</Typography>
                                 </Fade>
                                 <Fade right>
-                                <Typography sx={{fontSize: "96px", fontWeight: "600", textAlign: "left"}} variant="h1"
+                                <Typography sx={{fontSize: "121px", fontWeight: "600", textAlign: "left"}} variant="h1"
                                             align="center">N<img src={O} alt="o" className={classes.shapeO}/>t
                                     War</Typography>
                                 </Fade>
@@ -68,9 +68,9 @@ const SignUp = () => {
                             }} variant="h3" align="center">So why wait, Create your account <br/> and start making pizza</Typography>
                             <form>
                                 <Grid container direction="column">
-                                    <TextField id="standard-basic" label="Enter Your Name" variant="standard"/>
-                                    <TextField id="standard-basic" label="Enter Your E-mail" variant="standard"/>
-                                    <TextField id="standard-basic" label="Enter Your Password" variant="standard"/>
+                                    <TextField id="standard-basic" label="Enter Your Name" variant="standard"  margin="normal"/>
+                                    <TextField id="standard-basic" label="Enter Your E-mail" variant="standard"  margin="normal"/>
+                                    <TextField id="standard-basic" type="password" label="Enter Your Password" variant="standard"  margin="normal"/>
                                     <ColorButton>Create My Account</ColorButton>
                                 </Grid>
                                 <Typography sx={{color: "#fff"}} paragraph={true}>Already have an account?<Link
