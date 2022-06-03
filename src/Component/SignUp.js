@@ -1,8 +1,9 @@
 import React from 'react';
-import {Box, Button, FormControlLabel, Grid, Link, Paper, TextField, Typography} from "@mui/material";
+import {Box, Button, FormControlLabel, Grid, Paper, TextField, Typography} from "@mui/material";
 import { styled } from '@mui/system';
 import { makeStyles } from '@mui/styles';
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-router-dom';
 
 
 //Image
@@ -68,8 +69,8 @@ const SignUp = () => {
                             }} variant="h3" align="center">So why wait, Create your account <br/> and start making pizza</Typography>
                             <form>
                                 <Grid container direction="column">
-                                    <TextField id="standard-basic" label="Enter Your Name" variant="standard"  margin="normal"/>
-                                    <TextField id="standard-basic" label="Enter Your E-mail" variant="standard"  margin="normal"/>
+                                    <TextField id="standard-basic" type="name" label="Enter Your Name" variant="standard"  margin="normal"/>
+                                    <TextField id="standard-basic" type="email" label="Enter Your E-mail" variant="standard"  margin="normal"/>
                                     <TextField id="standard-basic" type="password" label="Enter Your Password" variant="standard"  margin="normal"/>
                                     <ColorButton>Create My Account</ColorButton>
                                 </Grid>
